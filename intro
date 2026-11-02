@@ -1,0 +1,21 @@
+offensive security (simulate attacker to assess security) /red teaming
+dirb
+look for hidden pages, access page via url and if weak security one is able to access website without permission (e.g. without login)
+
+defensive security (responds to threats, uses security tools, monitors systems) /blue teaming
+stop attack as soon as possible to limit damage
+threat intelligence: share information about attackers, important to keep threat intelligence system up to date (contains e.g. date and time  of attack, attacked username, targeted age, type of attack)
+incident report: attacks are used to train for future incidents with similar approach 
+
+Shodan: search engine for devices that are connected to the internet (e.g. servers, security cameras, smart TVs), routers or firewalls block connection thus are not visible on Shodan, it is only a snapshot (information might be outdated)
+apache: web server, wenn searching for apache in the search engine Shodan one will find all devices running on apache
+port: e.g. search for: port:22 -> filters all devices with open port 22 (SSH port)
+Using Shodan is legal however interfering with a device without a permission is not
+Shodan saves banners (information about devices such as its version number), attackers can benefit from this by looking for devices on Shodan with old versions which have known weak spots and are easier to attack
+
+VirusTotal: popular in blue teaming, contains suspicious files and links
+
+Common Vulnerabilities and Exposures (CVE): like dictionary for vulnerabilities which are ranked (CVSS score), each vulnerability identified by unique name: CVE-YEAR-NUMBER
+
+Linux man(ual) pages: documents linux commands
+dirb or other security tools might not have man pages (use command --help or look at tool's website)
